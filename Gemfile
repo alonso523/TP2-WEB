@@ -14,7 +14,7 @@ group :development, :test do
 end
 
 #gema para autenticarse
-gem 'sorcery'
+gem 'clearance'
 
 # Gems used only for assets and not required
 # in production environments by default.

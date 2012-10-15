@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Bienvenido a la aplicación, <%= @user.name %></h1>
+    <p>
+      Usted se ha registrado de manera exitosa,
+      su nombre de usuario es su dirección de correo electrónico
+    </p>
+    <p>Gracias por registrarse y usar nuestros servicios!</p>
+  </body>
+</html>

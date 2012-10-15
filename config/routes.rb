@@ -1,5 +1,8 @@
 TP2Alonso::Application.routes.draw do
-  resources :users
+  resources :references
+
+  #Clearance  --> para la autenticación de usuarios
+  match '/sign_out' =>  'clearance/sessions#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +53,7 @@ TP2Alonso::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'users#index'
+  root :to => 'references#index'
 
   # See how all your routes lay out with "rake routes"
 
